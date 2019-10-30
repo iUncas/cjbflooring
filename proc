@@ -1,0 +1,22 @@
+echo '###'
+echo 'installation of cjb repository'
+echo 'by Wojciech Sznurawa'
+echo 'version 1.1'
+mkdir /var/www/html/testsite
+cp -R image  /var/www/html/testsite
+cp -R scripts /var/www/html/testsite
+cp 65b.html /var/www/html/testsite
+chown -R  www-data:www-data /var/www/html/testsite
+chmod -R 775 /var/www/html/testsite
+chmod  -R 775 /var/www/html/testsite/image/*
+chmod 775 /var/www/html/testsite/image/*.*
+chmod 775 /var/www/html/testsite/image/slide/*.*
+chmod -R 775 /var/www/html/testsite/scripts/*
+chmod 775 /var/www/html/testsite/scripts/css/*.*
+chmod 775 /var/www/html/testsite/scripts/js/*.*
+chmod 775 /var/www/html/testsite/65b.html
+chmod 775 /var/www/html/testsite/image/*.ico
+/etc/init.d/apache2 restart 
+echo 'installation completed'
+echo '###'
+echo 'test site'
