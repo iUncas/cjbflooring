@@ -67,7 +67,14 @@ body {
 	@media (orientation: portrait) {
 		/*end small media display*/
 	 @media (max-width: 849px) {
-	
+	#mobile_land_nav {
+	width: 300px;
+	height: 260px;
+	}
+	#mobile_land_nav1 {
+	width: 300px; 
+	height: 260px;
+	}
 	#maindiv {
 	display: none;
 	}
