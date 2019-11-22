@@ -1,0 +1,17 @@
+echo '###'
+echo 'installation of cjb repository'
+echo '### cjb-resinflooring.co.uk installation package###'
+echo '## removing old files##'
+rm -R /home/users/h623280/public_html/cjb-resinflooring.co.uk/*
+echo '## old files removed...##'
+echo '## copying new files..##'
+cp -R /home/users/h623280/git/cjbflooring/*  /home/users/h623280/public_html/cjb-resinflooring.co.uk/
+echo '## new files copied ##'
+echo '##cjb-resinflooring.co.uk installation completed ##'
+echo '## base installation provided by it-divein.com ##'
+#echo '###'
+echo 'removing files from directory'
+rm /home/users/h623280/public_html/cjb-resinflooring.co.uk/process
+rm /home/users/h623280/public_html/cjb-resinflooring.co.uk/proc
+rm /home/users/h623280/public_html/cjb-resinflooring.co.uk/README.md
+
